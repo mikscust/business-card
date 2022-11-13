@@ -1,0 +1,79 @@
+/* reset css from top */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* reset css to bottom */
+
+body {
+    position: relative;
+    background-color: hsl(0, 0%, 83%);
+    color: hsl(210, 5%, 8%);
+    font-family: 'Nunito', sans-serif;;
+}
+
+/* parents */
+
+.red-card {
+    background-color: hsl(0, 57%, 54%);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.blue-card {
+    background-color: hsl(216, 43%, 51%);
+    font-weight: 200;
+}
+
+.red-card,
+.blue-card {
+    position: relative;
+    /* 
+    display: block; -> this is the default display so no need to write it on
+    */
+    width: 25rem;
+    height: 15rem;
+    margin: 3rem auto;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.red-office-container,
+.red-gabriel-container,
+.red-chavanne-container,
+.blue-card-phone-email-container,
+.blue-card-instagram-website-container {
+    position: absolute;
+}
+
+
+.blue-card-instagram-website-container,
+.red-gabriel-container,
+.red-chavanne-container {
+    top: 13rem;
+}
+
+.red-chavanne-container {
+    left: 17rem;
+}
+
+.red-office-container {
+    transform: rotate(90deg);
+    transform-origin: left;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-left: 1rem;
+    margin-top: -1rem;
+}
