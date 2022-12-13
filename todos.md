@@ -40,5 +40,3 @@ main div parent with 2 childs:
 background color: matte black
 font style: minimalist
 font color: black
-
-edited
